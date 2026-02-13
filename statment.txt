@@ -1,0 +1,147 @@
+1. Project Purpose
+
+This project is a backend API for a flower shop. Its goal is to manage all core business operations in a structured, automated way. Using FastAPI, it will allow you to:
+
+Track flowers in inventory
+
+Process and manage customer orders
+
+Handle delivery logistics
+
+Keep customer info organized
+
+Generate reports for sales and inventory
+
+Allow building custom bouquets or arrangements
+
+The idea is to simulate a real-world shop backend using modern API practices.
+
+2. Key Functional Modules
+
+The project is split into separate modules for modularity. This makes the code easier to maintain, test, and scale.
+
+Inventory (inventory/)
+
+Manage all flowers available in the shop
+
+Include categories (roses, lilies, etc.), quantity, price
+
+Operations(DONE): add new flowers ( create /post ), update stock (update), remove discontinued flowers(delete), fetch inventory(get)
+
+Orders (orders/)
+
+Handle customer orders (done)
+
+Track order status: pending, processed, shipped, delivered (done)
+
+Support CRUD operations (Create, Read, Update, Delete) for orders (done)
+
+Could include filtering by date, total price, or customer  (done)
+
+Customers (customers/)
+
+Maintain customer information: name, contact, address
+
+Operations: add new customer(done), update info(done), retrieve customer history(done)
+
+Delivery (delivery/)
+
+Track delivery status for orders
+
+Update delivery info: in transit, delivered, delayed
+
+Could integrate with external delivery APIs in the future
+
+Analytics (analytics/)
+
+Generate reports for sales, inventory levels, and popular flowers
+
+Could calculate revenue per month, most sold flowers, etc.
+
+3. Data Management
+
+Uses JSON files (data/) for lightweight storage
+
+Each module has its own JSON file: flowers, orders, customers, deliveries
+
+This simulates a simple database without needing SQL
+
+Key Point: JSON is easy for testing, but in production, you might switch to a proper database like PostgreSQL.
+
+4. Pydantic Models (models/schemas.py)
+
+Defines data validation rules using FastAPI’s Pydantic models
+
+Examples of validations:
+
+Prices > 0
+
+Quantities >= 0
+
+Valid dates for orders/delivery
+
+Pydantic ensures data integrity before it even reaches your business logic.
+
+5. Utilities (utils/helpers.py)
+
+Functions for repetitive tasks, like:
+
+Reading/writing JSON files
+
+Calculating total order amounts
+
+Checking stock availability
+
+Keeps main endpoints clean and readable
+
+6. FastAPI Features in Use
+
+RESTful API Design
+
+Uses proper HTTP methods: GET (read), POST (create), PUT/PATCH (update), DELETE (remove)
+
+Path & Query Parameters
+
+Fetch inventory by category or price range
+
+Filter orders by customer or status
+
+Error Handling
+
+Uses HTTPException to return proper HTTP status codes (404 for not found, 400 for bad request)
+
+Partial Updates
+
+Update only the fields needed, like order status or delivery info
+
+Modular Architecture
+
+Each module handles a single responsibility, making code easier to test and extend
+
+Custom Responses
+
+Returns clear JSON messages with proper codes: 200 OK, 201 Created, 404 Not Found
+
+7. Environment Variables (.env)
+
+Could store sensitive info, like admin credentials or API keys
+
+Keeps secret data out of your codebase
+
+8. Main Application Entry (main.py)
+
+Imports all modules and registers routers
+
+Starts the FastAPI app
+
+Central place for middleware and global configurations
+
+9. Project Goals & Benefits
+
+Centralized flower shop management
+
+Easy to expand: add coupons, payments, or a real database later
+
+Provides REST API endpoints that can connect to a frontend (mobile app, website, etc.)
+
+Teaches FastAPI best practices: modular design, Pydantic validation, error handling, JSON storage

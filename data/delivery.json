@@ -1,0 +1,92 @@
+{
+    "D001": {
+        "order_id": 0,
+        "customer_name": "string",
+        "delivery_status": "string",
+        "expected_date": "string",
+        "delivered_date": "string",
+        "delivery_person": "string",
+        "delivery_id": 0
+    },
+    "D002": {
+        "order_id": "O002",
+        "customer_name": "Ali Raza",
+        "delivery_status": "Delivered",
+        "expected_date": "2026-02-04",
+        "delivered_date": "2026-02-04",
+        "delivery_person": "Sami"
+    },
+    "D003": {
+        "order_id": "O003",
+        "customer_name": "Sara Malik",
+        "delivery_status": "In Transit",
+        "expected_date": "2026-02-08",
+        "delivered_date": null,
+        "delivery_person": "Haris"
+    },
+    "D004": {
+        "order_id": "O004",
+        "customer_name": "Hamza Ali",
+        "delivery_status": "Pending",
+        "expected_date": "2026-02-09",
+        "delivered_date": null,
+        "delivery_person": "Ali"
+    },
+    "D005": {
+        "order_id": "O005",
+        "customer_name": "Fatima Noor",
+        "delivery_status": "Delivered",
+        "expected_date": "2026-02-06",
+        "delivered_date": "2026-02-06",
+        "delivery_person": "Farhan"
+    },
+    "D006": {
+        "order_id": "O006",
+        "customer_name": "Usman Tariq",
+        "delivery_status": "Pending",
+        "expected_date": "2026-02-10",
+        "delivered_date": null,
+        "delivery_person": "Sami"
+    },
+    "D007": {
+        "order_id": "O007",
+        "customer_name": "Hina Shah",
+        "delivery_status": "In Transit",
+        "expected_date": "2026-02-08",
+        "delivered_date": null,
+        "delivery_person": "Haris"
+    },
+    "D008": {
+        "order_id": "O008",
+        "customer_name": "Ahmed Qureshi",
+        "delivery_status": "Pending",
+        "expected_date": "2026-02-11",
+        "delivered_date": null,
+        "delivery_person": "Ali"
+    },
+    "D009": {
+        "order_id": "O009",
+        "customer_name": "Zara Imran",
+        "delivery_status": "Delivered",
+        "expected_date": "2026-02-07",
+        "delivered_date": "2026-02-07",
+        "delivery_person": "Farhan"
+    },
+    "D010": {
+        "order_id": "O010",
+        "customer_name": "Bilal Ahmed",
+        "delivery_status": "In Transit",
+        "expected_date": "2026-02-09",
+        "delivered_date": null,
+        "delivery_person": "Sami"
+    },
+    "0": {
+        "delivery_id": 0,
+        "order_id": 0,
+        "customer_name": "string",
+        "delivery_status": "string",
+        "expected_date": "string",
+        "delivered_date": "string",
+        "delivery_person": "string"
+    }
+}
