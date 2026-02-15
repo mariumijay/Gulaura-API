@@ -76,17 +76,6 @@
         "delivery_status": "Pending",
         "delivery_address": "Block D, Bahria Town, Lahore"
     },
-    "O009": {
-        "customer_name": "Zara Imran",
-        "items": {
-            "F005": 3,
-            "F007": 5
-        },
-        "total_price": 1390,
-        "order_date": "2026-02-06",
-        "delivery_status": "Delivered",
-        "delivery_address": "House 11, Cantt, Lahore"
-    },
     "O014": {
         "order_id": "O014",
         "customer_name": "John Wick",

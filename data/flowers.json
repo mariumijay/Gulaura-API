@@ -1,10 +1,10 @@
 {
     "F002": {
-        "name": "White Lily",
+        "name": "Tulip",
         "category": "Lilies",
-        "price": 120,
-        "stock": 30,
-        "color": "White"
+        "price": 10.95,
+        "stock": 102,
+        "color": "red"
     },
     "F003": {
         "name": "Sunflower",
