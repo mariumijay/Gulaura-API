@@ -133,6 +133,33 @@ _Update delivery status_
 
 ---
 
+## 🐳 Docker Setup
+
+You can run the Gulara Flower Shop API using Docker.
+
+### 1. Build Docker Image
+Make sure `requirements.txt` is in the root folder. Then run:
+
+```bash
+docker build -t gulaura-api .
+```
+### 2. Run Container
+```
+docker run -p 8000:8000 gulaura-api
+```
+Open in browser:
+
+http://localhost:8000/docs
+
+Push to Docker Hub
+
+The API image is also available on Docker Hub:
+
+[🌐 gulaura-api on Docker Hub](https://hub.docker.com/r/mrumahv/gulaura-api)
+
+
+
+
 ## 🚀 Installation
 
 ### 1. Clone the repository
