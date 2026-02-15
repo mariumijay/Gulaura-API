@@ -60,6 +60,93 @@ GULARA-FLOWER-SHOP/
 
 ---
 
+---
+
+## 📡 API Endpoints & Screenshots
+
+### 🌹 Inventory Endpoints
+
+![Inventory](screenshots/inventory.png)
+
+**GET /inventory**  
+_List all flowers in inventory_  
+![GET Inventory](screenshots/get_inventory.png)
+
+**POST /inventory/create**  
+_Add a new flower_  
+![POST Inventory](screenshots/post_inventory.png)
+
+**PUT /inventory/update/{flower_id}**  
+_Update existing flower_  
+![PUT Inventory](screenshots/put_inventory.png)
+
+**DELETE /inventory/delete/{flower_id}**  
+_Delete a flower_  
+![DELETE Inventory](screenshots/delete_inventory.png)
+
+---
+
+### 📦 Orders Endpoints
+
+![Orders](screenshots/orders.png)
+
+**GET /orders**  
+_List all orders_  
+![GET Orders](screenshots/get_orders.png)
+
+**POST /orders/create**  
+_Create a new order_  
+![POST Orders](screenshots/post_orders.png)
+
+**PUT /orders/update/{order_id}**  
+_Update an existing order_  
+![PUT Orders](screenshots/put_orders.png)
+
+**DELETE /orders/delete/{order_id}**  
+_Delete an order_  
+![DELETE Orders](screenshots/delete_orders.png)
+
+---
+
+### 👥 Customers Endpoints
+
+**GET /customers**  
+_List all customers_  
+![Customers](screenshots/customers.png)
+
+**POST /customers/create**  
+_Add a new customer_  
+![POST Customers](screenshots/post_customers.png)
+
+**PUT /customers/update/{customer_id}**  
+_Update customer details_  
+![PUT Customers](screenshots/put_customers.png)
+
+**DELETE /customers/delete/{customer_id}**  
+_Delete a customer_  
+![DELETE Customers](screenshots/delete_customers.png)
+
+---
+
+### 🚚 Delivery Endpoints
+
+**GET /delivery**  
+_List all deliveries_  
+![Delivery](screenshots/delivery.png)
+
+**POST /delivery/create**  
+_Add a new delivery_  
+![POST Delivery](screenshots/post_delivery.png)
+
+**PUT /delivery/update/{delivery_id}**  
+_Update delivery status_  
+![PUT Delivery](screenshots/put_delivery.png)
+
+**DELETE /delivery/delete/{delivery_id}**  
+_Delete a delivery_  
+![DELETE Delivery](screenshots/delete_delivery.png)
+
+---
 
 ## 🚀 Installation
 
