@@ -112,19 +112,8 @@ _Delete an order_
 
 **GET /customers**  
 _List all customers_  
-![Customers](screenshots/customers.png)
+![GET_Customers](screenshots/get_customers.png)
 
-**POST /customers/create**  
-_Add a new customer_  
-![POST Customers](screenshots/post_customers.png)
-
-**PUT /customers/update/{customer_id}**  
-_Update customer details_  
-![PUT Customers](screenshots/put_customers.png)
-
-**DELETE /customers/delete/{customer_id}**  
-_Delete a customer_  
-![DELETE Customers](screenshots/delete_customers.png)
 
 ---
 
@@ -141,10 +130,6 @@ _Add a new delivery_
 **PUT /delivery/update/{delivery_id}**  
 _Update delivery status_  
 ![PUT Delivery](screenshots/put_delivery.png)
-
-**DELETE /delivery/delete/{delivery_id}**  
-_Delete a delivery_  
-![DELETE Delivery](screenshots/delete_delivery.png)
 
 ---
 
