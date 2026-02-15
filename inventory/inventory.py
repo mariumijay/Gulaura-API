@@ -6,7 +6,7 @@ from typing import Annotated
 from models.schemas import Flower, UpdateFlower
 from utils.helper import load_data , save_data
 
-data_file = "data/delivery.json"
+data_file = "data/flowers.json"
 
 app = FastAPI()
 
@@ -35,7 +35,7 @@ def get_inventory(flower_id: str = Path(..., description="ID of the flower")):
 def create_flower(flower: Flower):
 
     #load inventory data from the JSON file
-    data = load_data()
+    data = load_data(data_file)
     #check if flower with the given ID already exists in the inventory
     if flower.flower_id in data:
             raise HTTPException(status_code=400, detail="Flower with this ID already exists in inventory")
@@ -43,7 +43,7 @@ def create_flower(flower: Flower):
     if flower.stock < 0:
          raise HTTPException(status_code=400,detail="Stock can not be negative")
     #add the new flower to the inventory
-    data[flower.flower_id] = flower.dict()
+    data[flower.flower_id] = flower.model_dump()
     #save the updated inventory back to the JSON file
     save_data(data_file,data)
 
@@ -61,7 +61,7 @@ def update_flower( flower_id: str, flowers : UpdateFlower):
     #update pydantic model with existing data
     updated_flower_data = flowers.model_dump(exclude_unset=True)
     #Stock Validation
-    if "stock" in updated_flower_data and updated_flower_data["stock"]:
+    if "stock" in updated_flower_data and updated_flower_data["stock"] < 0:
          raise HTTPException(status_code=400, detail="Stock cannot be negative")
     #update the flower data in the inventory
     existing_flower_data.update(updated_flower_data)
