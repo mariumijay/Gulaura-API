@@ -1,2 +1,72 @@
-{"F001": {"name": "Rosy", "category": "Roses", "price": 11.0, "stock": 100, "color": "Red"}, 
-"F002": {"name": "White Lily", "category": "Lilies", "price": 120, "stock": 30, "color": "White"}, "F003": {"name": "Sunflower", "category": "Sunflowers", "price": 100, "stock": 40, "color": "Yellow"}, "F004": {"name": "Pink Carnation", "category": "Carnations", "price": 90, "stock": 60, "color": "Pink"}, "F005": {"name": "Orchid", "category": "Orchids", "price": 200, "stock": 25, "color": "Purple"}, "F006": {"name": "Tulip", "category": "Tulips", "price": 80, "stock": 70, "color": "Red"}, "F007": {"name": "Yellow Rose", "category": "Roses", "price": 150, "stock": 35, "color": "Yellow"}, "F008": {"name": "Blue Hyacinth", "category": "Hyacinths", "price": 130, "stock": 20, "color": "Blue"}, "F009": {"name": "Lavender", "category": "Herbs", "price": 70, "stock": 45, "color": "Purple"}, "F010": {"name": "Peach Rose", "category": "Roses", "price": 160, "stock": 40, "color": "Peach"}, "R001": {"flower_id": "R001", "name": "Rose", "price": 10.99, "stock": 100, "color": "Red"}}
+{
+    "F002": {
+        "name": "White Lily",
+        "category": "Lilies",
+        "price": 120,
+        "stock": 30,
+        "color": "White"
+    },
+    "F003": {
+        "name": "Sunflower",
+        "category": "Sunflowers",
+        "price": 100,
+        "stock": 40,
+        "color": "Yellow"
+    },
+    "F004": {
+        "name": "Pink Carnation",
+        "category": "Carnations",
+        "price": 90,
+        "stock": 60,
+        "color": "Pink"
+    },
+    "F005": {
+        "name": "Orchid",
+        "category": "Orchids",
+        "price": 200,
+        "stock": 25,
+        "color": "Purple"
+    },
+    "F006": {
+        "name": "Tulip",
+        "category": "Tulips",
+        "price": 80,
+        "stock": 70,
+        "color": "Red"
+    },
+    "F007": {
+        "name": "Yellow Rose",
+        "category": "Roses",
+        "price": 150,
+        "stock": 35,
+        "color": "Yellow"
+    },
+    "F008": {
+        "name": "Blue Hyacinth",
+        "category": "Hyacinths",
+        "price": 130,
+        "stock": 20,
+        "color": "Blue"
+    },
+    "F009": {
+        "name": "Lavender",
+        "category": "Herbs",
+        "price": 70,
+        "stock": 45,
+        "color": "Purple"
+    },
+    "F010": {
+        "name": "Peach Rose",
+        "category": "Roses",
+        "price": 160,
+        "stock": 40,
+        "color": "Peach"
+    },
+    "F100": {
+        "flower_id": "F100",
+        "name": "Tulip",
+        "price": 100.99,
+        "stock": 110,
+        "color": "Red"
+    }
+}

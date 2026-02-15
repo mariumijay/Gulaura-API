@@ -42,7 +42,7 @@ def update_delivery(delivery_id: str, update: UpdateDelivery):
     delivery_details.update(updates)
 
     #save the updated delivery details back to the database
-    save_data(data)
+    save_data(data_file,data)
 
 
     # Here you would typically update the delivery status in your database

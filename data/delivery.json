@@ -5,8 +5,7 @@
         "delivery_status": "string",
         "expected_date": "string",
         "delivered_date": "string",
-        "delivery_person": "string",
-        "delivery_id": 0
+        "delivery_person": "string"
     },
     "D002": {
         "order_id": "O002",
@@ -19,7 +18,7 @@
     "D003": {
         "order_id": "O003",
         "customer_name": "Sara Malik",
-        "delivery_status": "In Transit",
+        "delivery_status": "Delivered",
         "expected_date": "2026-02-08",
         "delivered_date": null,
         "delivery_person": "Haris"
@@ -83,10 +82,28 @@
     "0": {
         "delivery_id": 0,
         "order_id": 0,
-        "customer_name": "string",
-        "delivery_status": "string",
-        "expected_date": "string",
-        "delivered_date": "string",
-        "delivery_person": "string"
+        "customer_name": "Marium",
+        "delivery_status": "Pending",
+        "expected_date": "2026-09-04",
+        "delivered_date": "2026-09-04",
+        "delivery_person": "Omer"
+    },
+    "23": {
+        "delivery_id": 23,
+        "order_id": 23,
+        "customer_name": "Hafsa Ali",
+        "delivery_status": "In Transit",
+        "expected_date": "2026-07-06",
+        "delivered_date": "2026-07-06",
+        "delivery_person": "Arfan Ali"
+    },
+    "1": {
+        "delivery_id": 1,
+        "order_id": 1,
+        "customer_name": "Afsha Ali",
+        "delivery_status": "Delivered",
+        "expected_date": "2026-07-05",
+        "delivered_date": "2026-07-05",
+        "delivery_person": "Jack"
     }
 }

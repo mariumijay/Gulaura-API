@@ -6,7 +6,7 @@ from models.schemas import Order, UpdateOrder
 from utils.helper import load_data , save_data
 import json
 
-data_file = "data/delivery.json"
+data_file = "data/orders.json"
 
 app =FastAPI()
 
@@ -35,7 +35,7 @@ def get_order(order_id: str = Path(..., description="ID of the order")):
         return JSONResponse(status_code=200, content={"order_id": order_id, "status": "Order details would be here"})
 
 @app.get("/sort")
-def  sort_orders(sortby: str = Query(..., description="Field to sort orders by", examples="order_date")):
+def  sort_orders(sortby: str = Query(..., description="Field to sort orders by")):
 
         #load data from the JSON file
         data = load_data(data_file)
@@ -53,7 +53,8 @@ def  sort_orders(sortby: str = Query(..., description="Field to sort orders by",
                 delivery_status_order = {"Pending": 1, "Delivered": 2, "In Transit": 3}
                 sorted_orders = dict(sorted(data.items(), key=lambda x: delivery_status_order.get(x[1][sortby], 4)))
         elif sortby =="order_id":
-                sorted_orders = dict(sorted(data.items(),key=lambda x: x[1][sortby]))
+                #sorted_orders = dict(sorted(data.items(), key=lambda x: x[1][sortby]))
+                sorted_orders = dict(sorted(data.items(), key=lambda x: x[1].get(sortby, "")))
         else:
                 sorted_orders = dict(sorted(data.items(), key=lambda x: x[1][sortby].lower()))
 
